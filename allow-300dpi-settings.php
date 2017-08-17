@@ -11,7 +11,7 @@ Description: Allow Pressbooks Prince to export 300dpi Images
 License: Free Distribution. 
             
 *******************************************************************************************************************/
-
+defined( 'ABSPATH' ) or die( 'Cheatin\' uh?' );
 add_filter( 'pb_pdf_css_override', function( $scss ) {
   $scss .= '$prince-image-resolution: 300dpi;' . "\n" . 'img { prince-image-resolution: 300dpi; }';
   return $scss;
